@@ -1,0 +1,100 @@
+Register User
+
+sample user Registration
+
+/*
+curl --location --request POST 'http://localhost:8081/v1/fitness-service/register/customer' \
+--data-raw '{"name":"jack","phonenumber":"999988877","emailId":"jack@gmail.com"}'
+
+response
+{
+    "name": "jack",
+    "phonenumber": "999988877",
+    "emailId": null
+}
+ */
+
+ {"center":{"location":"kormangla","slot":{"timeSlot":{"start":6,"end":7},"numberOfSlot":100},"type":"WEIGHTS"},"type":"WEIGHTS"}
+ {"center":{"location":"kormangla","slot":{"timeSlot":{"start":7,"end":8},"numberOfSlot":150},"type":"YOGA"},"type":"YOGA"}
+ {"center":{"location":"kormangla","slot":{"timeSlot":{"start":8,"end":9},"numberOfSlot":200},"type":"CARDIO"},"type":"CARDIO"}
+ {"center":{"location":"Bellandur","slot":{"timeSlot":{"start":18,"end":19},"numberOfSlot":100},"type":"CARDIO"},"type":"CARDIO"}
+
+ To register workout and list workout
+
+ sample curls and o/p
+
+ /*/register/workOuts
+
+     curl --location --request POST 'http://localhost:8081/v1/fitness-service/register/workOuts' \
+ --header 'Content-Type: application/json' \
+ --data-raw '{"center":{"location":"kormangla","slot":{"timeSlot":{"start":6,"end":7},"numberOfSlot":100},"type":"WEIGHTS"},"type":"WEIGHTS"}'
+ {
+     "center": {
+         "location": "kormangla",
+         "slot": {
+             "timeSlot": {
+                 "start": 6,
+                 "end": 7
+             },
+             "numberOfSlot": 100
+         },
+         "type": "WEIGHTS"
+     },
+     "type": "WEIGHTS"
+ }
+      */
+
+   /*
+         curl --location --request POST 'http://localhost:8081/v1/fitness-service/register/workOuts' \
+ --header 'Content-Type: application/json' \
+ --data-raw '{"center":{"location":"kormangla","slot":{"timeSlot":{"start":8,"end":9},"numberOfSlot":200},"type":"CARDIO"},"type":"CARDIO"}'
+         {
+     "center": {
+         "location": "kormangla",
+         "slot": {
+             "timeSlot": {
+                 "start": 8,
+                 "end": 9
+             },
+             "numberOfSlot": 200
+         },
+         "type": "CARDIO"
+     },
+     "type": "CARDIO"
+ }
+          */
+
+ /*
+ curl --location --request POST 'http://localhost:8081/v1/fitness-service/register/workOuts' \
+ --header 'Content-Type: application/json' \
+ --data-raw '{"center":{"location":"kormangla","slot":{"timeSlot":{"start":6,"end":7},"numberOfSlot":100},"type":"WEIGHTS"},"type":"WEIGHTS"}'
+
+ {
+     "center": {
+         "location": "kormangla",
+         "slot": {
+             "timeSlot": {
+                 "start": 6,
+                 "end": 7
+             },
+             "numberOfSlot": 100
+         },
+         "type": "WEIGHTS"
+     },
+     "type": "WEIGHTS"
+ }
+  */
+
+ /**
+  * Added these to the list
+  * {"center":{"location":"kormangla","slot":{"timeSlot":{"start":6,"end":7},"numberOfSlot":100},"type":"WEIGHTS"},"type":"WEIGHTS"}
+  * {"center":{"location":"kormangla","slot":{"timeSlot":{"start":7,"end":8},"numberOfSlot":150},"type":"YOGA"},"type":"YOGA"}
+  * {"center":{"location":"kormangla","slot":{"timeSlot":{"start":8,"end":9},"numberOfSlot":200},"type":"CARDIO"},"type":"CARDIO"}
+  * {"center":{"location":"Bellandur","slot":{"timeSlot":{"start":18,"end":19},"numberOfSlot":100},"type":"CARDIO"},"type":"CARDIO"}
+  */
+ /*
+ Listout available workouts
+
+
+  */
+
